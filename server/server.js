@@ -16,3 +16,14 @@ app.use('/api/sign-in', signInRoute);
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
+
+// Add this route to get user information
+app.get('/api/user-info', (req, res) => {
+    // This is a placeholder. In a real app, you would get this information from the session or token.
+    const user = {
+        username: 'johndoe',
+        name: 'John Doe',
+        profileIcon: '/images/default-profile.png'  // Placeholder profile icon
+    };
+    res.json(user);
+});

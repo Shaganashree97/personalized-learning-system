@@ -4,23 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard - Personalized Learning System</title>
-    <link rel="stylesheet" href="/css/styles.css">
+   <!-- <link rel="stylesheet" href="/css/styles.css"> -->
+    <link rel="stylesheet" href="/css/dashboard.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="/index.html">Home</a></li>
+                <li><a href="/profile.html"><img id="profileIcon" src="" alt="Profile Icon" class="profile-icon"></a></li>
+                <li><span id="profileName"></span> <!--(<span id="profileUsername"></span>) --> </li>
                 <li><a href="#" id="logoutButton">Logout</a></li>
             </ul>
         </nav>
-    </header>
+    </header>      
     <main>
         <div class="container">
-            <h1>Dashboard</h1>
-            <p>Welcome to your dashboard!</p>
+            <h1 id="welcomeMessage">Welcome, [User]</h1>
+            <div class="dashboard-buttons">
+                <button class="dashboard-button">Upcoming Tests</button>
+                <button class="dashboard-button">Progress</button>
+            </div>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search topics...">
+                <button id="searchButton">Search</button>
+            </div>
         </div>
     </main>
-    <script src="/js/logout.js"></script>
+    <script src="/js/dashboard.js"></script>
 </body>
 </html>
