@@ -15,7 +15,8 @@ document.getElementById('signInForm').addEventListener('submit', async (e) => {
     const result = await response.json();
 
     if (result.success) {
-        alert('Sign In Successful!');
+        alert('Sign In Successful! Redirecting to Dashboard.');
+        window.location.href = '/dashboard.html';
     } else {
         alert('Sign In Failed: ' + result.message);
     }

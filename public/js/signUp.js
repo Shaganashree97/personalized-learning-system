@@ -23,7 +23,8 @@ document.getElementById('signUpForm').addEventListener('submit', async (e) => {
     const result = await response.json();
 
     if (result.success) {
-        alert('Sign Up Successful!');
+        alert('Sign Up Successful! Redirecting to Sign In page.');
+        window.location.href = '/sign-in.html';
     } else {
         alert('Sign Up Failed: ' + result.message);
     }
