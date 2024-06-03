@@ -29,3 +29,7 @@ document.getElementById('signUpForm').addEventListener('submit', async (e) => {
         alert('Sign Up Failed: ' + result.message);
     }
 });
+
+document.getElementById('backButton').addEventListener('click', () => {
+    window.history.back();
+});

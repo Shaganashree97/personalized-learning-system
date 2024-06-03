@@ -21,3 +21,7 @@ document.getElementById('signInForm').addEventListener('submit', async (e) => {
         alert('Sign In Failed: ' + result.message);
     }
 });
+
+document.getElementById('backButton').addEventListener('click', () => {
+    window.history.back();
+});
